@@ -15,8 +15,6 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
-console.log("process.env.APP_VERSION: ",process.env.APP_VERSION || "3.0.1");
-
 const health = require('./routes/health');
 
 app.use('/api/health', health);
