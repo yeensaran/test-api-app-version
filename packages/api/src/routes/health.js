@@ -1,0 +1,13 @@
+/* eslint-disable consistent-return */
+const express = require('express');
+
+
+const router = express.Router();
+
+router.get('/app-version', async (req, res, next) => {
+   res.json({ version: '1.0.0' });
+});
+
+
+
+module.exports = router;
