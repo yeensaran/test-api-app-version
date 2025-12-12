@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/app-version', async (req, res, next) => {
-   res.json({ version: process.env.APP_VERSION_ || '3.0.2' });
+   res.json({ version: process.env.APP_VERSION__ || '3.0.2' });
 });
 
 
